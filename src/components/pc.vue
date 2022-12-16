@@ -136,6 +136,7 @@ export default {
         camera: true,
       });
       tracker.on("track", function (event) {
+        // console.log(event);
         context.clearRect(0, 0, canvas.width, canvas.height);
         event.data.forEach(function (rect) {
           context.strokeStyle = "#ff0000";
